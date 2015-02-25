@@ -1,89 +1,244 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Include jQuery Mobile stylesheets -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<!-- Include the jQuery library -->
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<!-- Include the jQuery Mobile library -->
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<title>Mobile Computing Lab 1</title>
-</head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
 
-<body>
 <div data-role="page" id="page">
-
-<div data-role="header">
-<h1> Friends & Family </h1>
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Campus</a></li>
+            <li><a href="#page3">Admission</a></li>
+			<li><a href="#page4">Department</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved.</h4>
+	</div>
 </div>
 
-<div data-role="content">
-<ul data-role="listview">
-<li><a href="#pageFriends">Friends</a></li>
-<li><a href="#pageFamily">Family</a></li>
-<li><a href="#page4">Emergency</a></li>
-</ul>
-
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">	
+    <h1> Campus </h1>
+		<li><a href="#page2.1">Islamabad</a></li>
+            <li><a href="#page2.2">Lahore</a></li>
+			<li><a href="#page2.3">Karachi</a></li>	
+            <li><a href="#page2.4">Peshawar</a></li>	
+	</div>
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
-<div data-role="footer">
-<h4>All right reserved</h4>
-</div>
+<!-- -------------------------------------------------------------                    -->
+
+<div data-role="page" id="page2.1">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">
+    <h1> Islamabad </h1>	
+	  
+      <!-------------------------   -->
+      
+      
+   <a href="geo:33.656392,73.016544?z=9&q=National+University+of+Computer+Emerging+Sciences"><img src="Islamabadfast.jpg" /> 
+</a> </div>
+      
+  <!--  ----------------------------------             ----    -->
+      
+      
+      
+                                                  
+	
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
 
-
-
+<div data-role="page" id="page2.2">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">	
+    <h1> Lahore </h1>
+    <a href="geo:31.480556, 74.304121?z=9&q=National+University+of+Computer+Emerging+Sciences"><img src="Lhrfast.jpg" /> 
+</a>  </div>
     
-<div data-role="page" id="pageFriends">
-<div data-role="header">
-<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
-<h1> Friends & Family </h1>
-
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
 
-<div data-role="content">
-<p> Ali: 0321-8459431 </p>
-<p> Usman: 0321-8459431 </p>
-
+<div data-role="page" id="page2.3">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">
+    <h1> Karachi </h1>	
+    <a href="geo:24.859843, 67.069951?z=9&q=National+University+of+Computer+Emerging+Sciences"><img src="Karachifast.jpg" /> 
+</a> </div>
+    
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
 
-<div data-role="footer">
-<h4>All right reserved</h4>
-</div></div>
+<div data-role="page" id="page2.4">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">
+    <h1> Peshawar </h1>	
+    <a href="geo:24.859843, 67.069951?z=9&q=National+University+of+Computer+Emerging+Sciences"><img src="Pwrfast.jpg" /> 
+</a> </div>
+    
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!--                            ---------------------------------------------------   -->
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">
+    <h1> Admission </h1>	
+    <img src="admissions.jpg" width="956" height="217" alt=""/> </div>
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
+</div>
 
 <div data-role="page" id="page4">
-<div data-role="header">
-<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
-<h1> Emergency </h1>
-
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">	
+		<h2> Departments </h2>
+        <li><a href="#page4.1">CS</a></li>
+            <li><a href="#page4.2">EE</a></li>	
+            <li><a href="#page4.3">Management</a></li>
+            
+	</div>
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
 
-<div data-role="content">
-<p> Ali: 0321-8459431 </p>
-<p> Usman: 0321-8459431 </p>
-
+<div data-role="page" id="page4.1">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">
+          <h1>CS</h1>	
+		<div data-role="collapsible">
+           <h1>BS</h1>
+           <p>Islamabad</p>
+           <p>Karachi</p>
+           <p>Lahore</p>
+           <p>Peshawar</p>
+           
+        </div>
+        
+        <div data-role="collapsible">
+           <h1>MS</h1>
+           <p>Islamabad</p>
+           <p>Karachi</p>
+           <p>Lahore</p>
+           <p>Peshawar</p>
+        </div>
+            
+	</div>
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
 
-<div data-role="footer">
-<h4>All right reserved</h4>
-</div></div>
-
-<div data-role="page" id="pageFamily">
-<div data-role="header">
-<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
-<h1> Family </h1>
-
+<div data-role="page" id="page4.2">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">
+          <h1>EE</h1>	
+		<div data-role="collapsible">
+           <h1>BS</h1>
+           <p>Islamabad</p>
+           <p>Karachi</p>
+           <p>Lahore</p>
+           <p>Peshawar</p>
+           
+        </div>
+        
+        <div data-role="collapsible">
+           <h1>MS</h1>
+           <p>Islamabad</p>
+           <p>Karachi</p>
+           <p>Lahore</p>
+           <p>Peshawar</p>
+        </div>
+            
+	</div>
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
 
-<div data-role="content">
-<p> Ali: 0321-8459431 </p>
-<p> Usman: 0321-8459431 </p>
-
+<div data-role="page" id="page4.3">
+	<div data-role="header">
+		<h1><img src="Logo.jpg" width="122" height="122" alt=""/></h1>
+        <a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="content">
+          <h1>Management</h1>	
+		<div data-role="collapsible">
+           <h1>BS</h1>
+           <p>Islamabad</p>
+           <p>Karachi</p>
+           <p>Lahore</p>
+           <p>Peshawar</p>
+           
+        </div>
+        
+        <div data-role="collapsible">
+           <h1>MS</h1>
+           <p>Islamabad</p>
+           <p>Karachi</p>
+           
+        </div>
+            
+	</div>
+	<div data-role="footer">
+		<h4>Copyright © 2000 - 2015 , NUCES. All Rights Reserved</h4>
+	</div>
 </div>
 
-<div data-role="footer">
-<h4>All right reserved</h4>
-</div></div>
 
 
 
